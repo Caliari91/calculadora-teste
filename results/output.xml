@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220712 23:58:38.526" rpa="false" schemaversion="3">
+<suite id="s1" name="Calc" source="C:\Users\ferna\Desktop\Desafio Robot Desktop\testecalculadora\calc.robot">
+<kw name="Quando eu abro a calculadora" type="SETUP">
+<kw name="Run" library="AutoItLibrary">
+<arg>calc.exe</arg>
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<msg timestamp="20220712 23:58:38.621" level="INFO">AutoItLibrary.Run(FileName='calc.exe', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20220712 23:58:38.620" endtime="20220712 23:58:38.621"/>
+</kw>
+<kw name="Win Wait Active" library="AutoItLibrary">
+<arg>Calculadora</arg>
+<doc>Direct wrapper for AutoIt's WinWaitActive method.</doc>
+<msg timestamp="20220712 23:58:39.114" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='Calculadora', WindowText='', TimeOut=60)</msg>
+<status status="PASS" starttime="20220712 23:58:38.621" endtime="20220712 23:58:39.115"/>
+</kw>
+<status status="PASS" starttime="20220712 23:58:38.618" endtime="20220712 23:58:39.115"/>
+</kw>
+<test id="s1-t1" name="TC15" line="231">
+<kw name="E verifico se a divisão de zero por qualquer número resulta em zero">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 23:58:41.128" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220712 23:58:39.125" endtime="20220712 23:58:41.128"/>
+</kw>
+<kw name="Send" library="AutoItLibrary">
+<arg>0</arg>
+<doc>method Send</doc>
+<status status="PASS" starttime="20220712 23:58:41.129" endtime="20220712 23:58:41.141"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 23:58:41.656" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20220712 23:58:41.141" endtime="20220712 23:58:41.656"/>
+</kw>
+<kw name="Send" library="AutoItLibrary">
+<arg>{/}</arg>
+<doc>method Send</doc>
+<status status="PASS" starttime="20220712 23:58:41.657" endtime="20220712 23:58:41.681"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 23:58:42.184" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20220712 23:58:41.681" endtime="20220712 23:58:42.184"/>
+</kw>
+<kw name="Send" library="AutoItLibrary">
+<arg>5</arg>
+<doc>method Send</doc>
+<status status="PASS" starttime="20220712 23:58:42.184" endtime="20220712 23:58:42.196"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 23:58:42.712" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20220712 23:58:42.197" endtime="20220712 23:58:42.712"/>
+</kw>
+<kw name="Send" library="AutoItLibrary">
+<arg>{=}</arg>
+<doc>method Send</doc>
+<status status="PASS" starttime="20220712 23:58:42.713" endtime="20220712 23:58:42.725"/>
+</kw>
+<status status="PASS" starttime="20220712 23:58:39.123" endtime="20220712 23:58:42.725"/>
+</kw>
+<doc>Verificar a divisão de zero</doc>
+<status status="PASS" starttime="20220712 23:58:39.118" endtime="20220712 23:58:42.730"/>
+</test>
+<kw name="Então fecho a calculadora" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 23:58:44.747" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220712 23:58:42.734" endtime="20220712 23:58:44.747"/>
+</kw>
+<kw name="Win Close" library="AutoItLibrary">
+<arg>Calculadora</arg>
+<doc>method WinClose</doc>
+<status status="PASS" starttime="20220712 23:58:44.748" endtime="20220712 23:58:45.014"/>
+</kw>
+<status status="PASS" starttime="20220712 23:58:42.733" endtime="20220712 23:58:45.014"/>
+</kw>
+<doc>Verificar as operações matemáticas de soma, subtração, multiplicação e divisão</doc>
+<status status="PASS" starttime="20220712 23:58:38.529" endtime="20220712 23:58:45.014"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Calc">Calc</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
